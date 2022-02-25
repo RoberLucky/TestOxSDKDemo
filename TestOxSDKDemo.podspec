@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-  s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '', 'VALID_ARCHS[sdk=iphoneos*]' => 'arm64 armv7' }
   s.static_framework = true
   s.vendored_frameworks = 'TestOxSDKDemo/Classes/*'
   
